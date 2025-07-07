@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suspicious or Safe?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Suspicious or Safe?</h1>
+        <p class="subtitle">Paste a link below to check if it's suspicious.</p>
+
+        <input type="text" id="urlInput" placeholder="Paste your link here...">
+        <div class="buttons">
+            <button onclick="checkURL()">Check Safety</button>
+            <button onclick="clearInput()">Clear</button>
+        </div>
+
+        <div id="resultBox" class="hidden">
+            <p id="resultText"></p>
+            <p id="tipText" class="tip-text"></p>
+        </div>
+
+        <label class="switch">
+            <input type="checkbox" id="modeToggle" onclick="toggleDarkMode()">
+            <span class="slider"></span> 🌙 Dark Mode
+        </label>
+    </div>
+
+    <audio id="alertSound" src="https://www.soundjay.com/button/beep-10.mp3"></audio>
+    <audio id="safeSound" src="https://www.soundjay.com/button/button-3.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
